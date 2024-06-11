@@ -30,7 +30,8 @@ ActiveRecord::Schema.define(version: 2024_06_10_205201) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.string "name"
+    t.string "customer_name"
+    t.boolean "is_active", default: true, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_customers_on_email", unique: true
@@ -38,8 +39,12 @@ ActiveRecord::Schema.define(version: 2024_06_10_205201) do
   end
 
   create_table "favorite_resorts", force: :cascade do |t|
+    t.integer "customer_id", null: false
+    t.integer "ski_resort_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["customer_id"], name: "index_favorite_resorts_on_customer_id"
+    t.index ["ski_resort_id"], name: "index_favorite_resorts_on_ski_resort_id"
   end
 
   create_table "owners", force: :cascade do |t|
@@ -48,7 +53,8 @@ ActiveRecord::Schema.define(version: 2024_06_10_205201) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.string "name"
+    t.string "owner_name", null: false
+    t.boolean "is_active", default: true, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_owners_on_email", unique: true
@@ -56,16 +62,30 @@ ActiveRecord::Schema.define(version: 2024_06_10_205201) do
   end
 
   create_table "prefectures", force: :cascade do |t|
+    t.string "prefecture_name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "reviews", force: :cascade do |t|
+    t.integer "customer_id", null: false
+    t.integer "ski_resort_id", null: false
+    t.text "comment", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "ski_resorts", force: :cascade do |t|
+    t.string "name", null: false
+    t.text "introduction", null: false
+    t.boolean "sales_active", null: false
+    t.boolean "snow_active", null: false
+    t.string "waiting_time", null: false
+    t.integer "price", null: false
+    t.string "road_condition", null: false
+    t.string "weather", null: false
+    t.integer "prefecture_id", null: false
+    t.integer "owner_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
