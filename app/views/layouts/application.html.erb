@@ -6,11 +6,153 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://kit.fontawesome.com/8c842679cc.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    
+    <header>
+      
+        <%= link_to root_path do %>
+          <h2>YUKIYAMACondition</h2>
+        <% end %>
+        
+        
+        <ul>
+          
+          <% if customer_signed_in? %>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-house"></i> TOP
+            <% end %>
+          </li>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-bookmark"></i> お気に入り
+            <% end %>
+          </li>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-person-skiing"></i> スキー場一覧
+            <% end %>
+          </li>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-user"></i> マイページ
+            <% end %>
+          </li>
+          
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-arrow-right-from-bracket"></i> ログアウト
+            <% end %>
+          </li>
+          
+          
+          <% elsif owner_signed_in? %>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-person-skiing"></i> スキー場一覧
+            <% end %>
+          </li>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-user"></i> マイページ
+            <% end %>
+          </li>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-arrow-right-from-bracket"></i> ログアウト
+            <% end %>
+          </li>
+          
+          
+          <% elsif admin_signed_in? %>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-snowflake"></i> 都道府県一覧
+            <% end %>
+          </li>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-person-skiing"></i> スキー場一覧
+            <% end %>
+          </li>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+             <i class="fa-solid fa-users"></i> 会員一覧
+            <% end %>
+          </li>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-user-tie"></i> 経営者一覧
+            <% end %>
+          </li>
+          
+          
+          <li>
+            <%= link_to root_path do %>
+              <i class="fa-solid fa-arrow-right-from-bracket"></i> ログアウト
+            <% end %>
+          </li>
+          
+          
+          <% else %>
+          
+          
+          <li>
+            <%= link_to root_path, class:"btn btn-outline-secondary" do %>
+              <i class="fa-solid fa-house"></i> TOP
+            <% end %>
+          </li>
+          
+          
+          <li>
+            <%= link_to root_path, class:"btn btn-outline-secondary" do %>
+              <i class="fa-solid fa-user-plus"></i> 新規登録
+            <% end %>
+          </li>
+          
+          
+          <li>
+            <%= link_to root_path, class:"btn btn-outline-secondary" do %>
+              <i class="fa-solid fa-arrow-right-to-bracket"></i> ログイン
+            <% end %>
+          </li>
+          
+          
+          <% end %>
+          
+        </ul>
+      
+    </header>
+    
     <%= yield %>
   </body>
 </html>
