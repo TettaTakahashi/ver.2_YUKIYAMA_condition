@@ -177,3 +177,25 @@ header li{
   padding-top: 20px;
   font-size: 18px;
 }
+
+
+
+
+/*新規登録TOPページ*/
+.ragistration-top{
+  height: 750px;
+  width: 100%;
+  background-image: url("360_F_90635540_U1KKezaNCocRD8Dr8v7kPugEWfELLfng.jpg");
+  background-size: cover;
+}
+
+
+
+
+/*ログインTOPページ*/
+.session-top{
+  height: 750px;
+  width: 100%;
+  background-image: url("blue-mountains-glacier-snow-600nw-2201620793.jpeg");
+  background-size: cover;
+}
