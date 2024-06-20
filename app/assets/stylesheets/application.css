@@ -230,8 +230,8 @@ header li{
   width: 8px;
   height: 8px;
   border: 0;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
+  border-top: 2px solid #EEFFFF;
+  border-right: 2px solid #EEFFFF;
   transform: rotate(45deg);
   position: absolute;
   top: 50%;
@@ -241,7 +241,7 @@ header li{
 
 
 .customer_registration_btn:hover{
-  background: #fff;
+  background: #EEFFFF;
   color: #00CC66;
 }
 
@@ -273,8 +273,8 @@ header li{
   width: 8px;
   height: 8px;
   border: 0;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
+  border-top: 2px solid #EEFFFF;
+  border-right: 2px solid #EEFFFF;
   transform: rotate(45deg);
   position: absolute;
   top: 50%;
@@ -284,7 +284,7 @@ header li{
 
 
 .owner_registration_btn:hover{
-  background: #fff;
+  background: #EEFFFF;
   color: #4D9BC1;
 }
 
@@ -302,4 +302,103 @@ header li{
   width: 100%;
   background-image: url("blue-mountains-glacier-snow-600nw-2201620793.jpeg");
   background-size: cover;
+  text-align: center;
+}
+
+
+.session-top h1{
+  padding-top: 60px;
+  font-size: 40px;
+}
+
+
+.session-top p{
+  margin-top: 30px;
+  padding-bottom: 80px;
+  font-size: 25px;
+}
+
+
+.customer_session_btn{
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  background: #0066FF;
+  border: 2px solid #0066FF;
+  padding: 1em 2em;
+  font-weight: bold;
+  color: #EEFFFF;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+
+.customer_session_btn:before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-top: 2px solid #EEFFFF;
+  border-right: 2px solid #EEFFFF;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  margin-top: -6px;
+}
+
+
+.customer_session_btn:hover{
+  background: #EEFFFF;
+  color: #0066FF;
+}
+
+
+.customer_session_btn:hover:before{
+  border-top: 2px solid #0066FF;
+  border-right: 2px solid #0066FF;
+}
+
+
+
+.owner_session_btn{
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  background: #4D9BC1;
+  border: 2px solid #4D9BC1;
+  padding: 1em 2em;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+
+.owner_session_btn:before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-top: 2px solid #EEFFFF;
+  border-right: 2px solid #EEFFFF;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  margin-top: -6px;
+}
+
+
+.owner_session_btn:hover{
+  background: #EEFFFF;
+  color: #4D9BC1;
+}
+
+
+.owner_session_btn:hover:before{
+  border-top: 2px solid #4D9BC1;
+  border-right: 2px solid #4D9BC1;
 }
