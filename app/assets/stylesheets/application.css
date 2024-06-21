@@ -402,3 +402,64 @@ header li{
   border-top: 2px solid #4D9BC1;
   border-right: 2px solid #4D9BC1;
 }
+
+
+
+
+/*利用者新規登録ページ*/
+.customer-registration{
+  width:700px;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+
+.customer-registration h2{
+  font-size: 35px;
+  padding-top: 50px;
+}
+
+
+.customer-registration p{
+  font-size: 25px;
+}
+
+
+.customer-registration table{
+  cellpadding: 10;
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+
+.customer-registration td{
+  padding-bottom: 25px;
+}
+
+
+input[type="text"]{
+  width: 250px;
+  height: 40px;
+}
+
+
+input[type="email"]{
+  width: 250px;
+  height: 40px;
+}
+
+
+input[type="password"]{
+  width: 250px;
+  height: 40px;
+}
+
+
+.signin-submit{
+  box-shadow: 3px 3px 3px gray;
+  height: 35px;
+  width: 80px;
+  background-color: #009900;
+  color: #fff;
+  border-color: #009900;
+}
