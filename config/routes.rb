@@ -21,6 +21,10 @@ Rails.application.routes.draw do
     get '/customers/sign_out' => 'devise/sessions#destroy'
   end
   
+  devise_scope :owner do
+    get '/owners/sign_out' => 'devise/sessions#destroy'
+  end
+  
   
   scope module: :customer do
     
