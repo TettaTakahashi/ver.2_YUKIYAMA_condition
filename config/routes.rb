@@ -15,4 +15,14 @@ Rails.application.routes.draw do
   root to: "homes#top"
   get 'homes/registration_top'
   get 'homes/session_top'
+  
+  
+  devise_scope :customer do
+    get '/customers/sign_out' => 'devise/sessions#destroy'
+  end
+  
+  
+  scope module: :customer do
+    
+  end
 end
