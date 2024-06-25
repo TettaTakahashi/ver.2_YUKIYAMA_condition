@@ -30,7 +30,22 @@ Rails.application.routes.draw do
   end
   
   
+  
+  
   scope module: :customer do
     
   end
+  
+  
+  
+  scope module: :customer do
+    
+  end
+  
+  
+  
+  namespace :admin do
+    resources :prefectures, only: [:index, :edit, :create, :update]
+  end
+  
 end

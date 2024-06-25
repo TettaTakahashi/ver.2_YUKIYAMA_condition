@@ -1,0 +1,18 @@
+<div id="page">
+  
+  <h1>都道府県一覧・追加</h1>
+  
+  
+  <%= form_with model: @prefecture, url: admin_prefectures_path do |f| %>
+  
+    <table>
+      
+      <tr>
+        <th>都道府県名</th>
+        <td><%= f.text_field :prefecture_name %></td>
+        <td><%= f.submit '新規追加', class: "" %></td>
+      </tr>
+      
+    </table>
+  <% end %>
+</div>

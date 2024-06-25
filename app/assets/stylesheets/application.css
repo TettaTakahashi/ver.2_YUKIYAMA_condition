@@ -473,3 +473,18 @@ input[type="password"]{
   color: #fff;
   border-color: #009900;
 }
+
+
+
+
+#page{
+  width:700px;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+
+#page h1{
+  padding-top: 60px;
+  font-size: 35px;
+}
