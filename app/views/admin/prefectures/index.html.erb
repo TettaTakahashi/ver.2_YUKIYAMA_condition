@@ -5,12 +5,12 @@
   
   <%= form_with model: @prefecture, url: admin_prefectures_path do |f| %>
   
-    <table>
+    <table class="prefecture-form">
       
       <tr>
         <th>都道府県名</th>
         <td><%= f.text_field :prefecture_name %></td>
-        <td><%= f.submit '新規追加', class: "" %></td>
+        <td><%= f.submit '新規追加', class: "success-btn" %></td>
       </tr>
       
     </table>
