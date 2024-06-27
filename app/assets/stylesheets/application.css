@@ -527,5 +527,20 @@ input[type="password"]{
 
 
 .prefecture-index{
-  
+  width: 500px;
+  text-align: left;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+
+.prefecture-index th{
+  padding: 20px 10px;
+  border-bottom: solid 5px #748ca5;
+}
+
+
+.prefecture-index td{
+  padding: 20px 10px;
+  border-bottom: solid 1px #748ca5;
 }
