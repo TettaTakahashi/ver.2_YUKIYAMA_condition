@@ -516,7 +516,7 @@ input[type="password"]{
 
 
 /*都道府県追加ページ*/
-.prefecture-form td{
+.form td{
   padding-left: 15px;
 }
 
@@ -543,4 +543,12 @@ input[type="password"]{
 .prefecture-index td{
   padding: 20px 10px;
   border-bottom: solid 1px #748ca5;
+}
+
+
+
+
+/*都道府県編集ページ*/
+.prefecture-edit {
+  
 }

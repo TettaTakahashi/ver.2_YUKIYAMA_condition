@@ -5,7 +5,7 @@
   
   <%= form_with model: @prefecture, url: admin_prefectures_path do |f| %>
   
-    <table class="prefecture-form">
+    <table class="form">
       
       <tr>
         <th>都道府県名</th>
@@ -35,7 +35,7 @@
             <%= prefecture.prefecture_name %>
           </td>
           <td>
-            <%= link_to "編集する", root_path, class: "primary-btn" %>
+            <%= link_to "編集する", edit_admin_prefecture_path(prefecture), class: "primary-btn" %>
           </td>
         </tr>
       <% end %>

@@ -8,6 +8,11 @@ class Admin::PrefecturesController < ApplicationController
   end
   
   
+  def edit
+    @prefecture = Prefecture.find(params[:id])
+  end
+  
+  
   def create
     @prefecture = Prefecture.new(prefecture_params)
     if @prefecture.save
@@ -16,6 +21,13 @@ class Admin::PrefecturesController < ApplicationController
       @prefectures=Prefecture.all
       redirect_to admin_prefectures_path
     end
+  end
+  
+  
+  def update
+    @prefecture = Prefecture.find(params[:id])
+    @prefecture.update(prefecture_params)
+    redirect_to admin_prefectures_path
   end
   
   

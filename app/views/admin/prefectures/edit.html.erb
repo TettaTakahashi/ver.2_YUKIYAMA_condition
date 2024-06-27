@@ -1,0 +1,18 @@
+<div id="page" class="prefecture-edit">
+  
+  <h1>都道府県編集</h1>
+  
+  
+  <%= form_with model: @prefecture, url: admin_prefecture_path(@prefecture) do |f| %>
+    <table class="form">
+        
+      <tr>
+        <th>都道府県名</th>
+        <td><%= f.text_field :prefecture_name %></td>
+        <td><%= f.submit "変更を保存", class: "success-btn" %></td>
+      </tr>
+      
+    </table>
+  <% end %>
+  
+</div>
