@@ -1,4 +1,4 @@
-<div id="page">
+<div id="page", class="prefecture-page">
   
   <h1>都道府県一覧・追加</h1>
   
@@ -15,4 +15,31 @@
       
     </table>
   <% end %>
+  
+  
+  
+  
+  <table class="prefecture-index">
+    
+    <thead>
+      <tr>
+        <th>都道府県名</th>
+        <th></th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <% @prefectures.each do |prefecture| %>
+        <tr>
+          <td>
+            <%= prefecture.prefecture_name %>
+          </td>
+          <td>
+            <%= link_to "編集する", root_path, class: "primary-btn" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+    
+  </table>
 </div>

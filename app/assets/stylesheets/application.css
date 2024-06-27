@@ -500,9 +500,32 @@ input[type="password"]{
 }
 
 
+.primary-btn{
+  box-shadow: 3px 3px 3px gray;
+  height: 35px;
+  width: 80px;
+  background-color: #0000FF;
+  color: #fff;
+  border-color: #009900;
+  padding: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+
 
 
 /*都道府県追加ページ*/
 .prefecture-form td{
   padding-left: 15px;
+}
+
+
+.prefecture-page h1{
+  padding-bottom: 20px;
+}
+
+
+.prefecture-index{
+  
 }
