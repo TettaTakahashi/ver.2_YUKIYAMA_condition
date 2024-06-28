@@ -46,6 +46,7 @@ Rails.application.routes.draw do
   
   namespace :admin do
     resources :prefectures, only: [:index, :edit, :create, :update]
+    resources :customers, only: [:index, :show, :edit, :update]
   end
   
 end
