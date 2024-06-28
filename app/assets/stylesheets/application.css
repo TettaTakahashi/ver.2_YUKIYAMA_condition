@@ -478,7 +478,7 @@ input[type="password"]{
 
 
 #page{
-  width:700px;
+  width:1000px;
   margin-right: auto;
   margin-left : auto;
 }
@@ -526,21 +526,24 @@ input[type="password"]{
 }
 
 
-.prefecture-index{
-  width: 500px;
+
+
+
+.index-table{
+  width: 900px;
   text-align: left;
   border-collapse: collapse;
   margin-top: 30px;
 }
 
 
-.prefecture-index th{
+.index-table th{
   padding: 20px 10px;
   border-bottom: solid 5px #748ca5;
 }
 
 
-.prefecture-index td{
+.index-table td{
   padding: 20px 10px;
   border-bottom: solid 1px #748ca5;
 }
@@ -548,7 +551,3 @@ input[type="password"]{
 
 
 
-/*都道府県編集ページ*/
-.prefecture-edit {
-  
-}
