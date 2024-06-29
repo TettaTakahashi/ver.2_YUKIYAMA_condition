@@ -1,0 +1,22 @@
+<div id="page" class="user-page">
+    
+  <h1><%= @customer.customer_name %>さんの会員情報編集</h1>
+  
+  
+  <%= form_with model: @customer, url: admin_customer_path do |f| %>
+    <table>
+      
+      <tr>
+        <th>会員名</th>
+        <td><%= f.text_field :customer_name %></td>
+      </tr>
+      
+      <tr>
+        <th></th>
+        <td><%= f.submit "変更内容を保存", class: "success-edit-btn" %></td>
+      </tr>
+      
+    </table>
+  <% end %>
+  
+</div>
