@@ -1,0 +1,24 @@
+<div id="page" class="user-page">
+  
+  <h1><%= @customer.customer_name %>の会員情報</h1>
+  
+  
+  <table>
+    
+    <tr>
+      <th>会員名</th>
+      <td><%= @customer.customer_name %></td>
+    </tr>
+    
+    <tr>
+      <th  class="table-second">メールアドレス</th>
+      <td  class="table-second"><%= @customer.email %></td>
+    </tr>
+    
+    <tr>
+      <th></th>
+      <td><%= link_to "編集する", edit_admin_customer_path, class: "success-btn" %></td>
+    </tr>
+  </table>
+  
+</div>

@@ -497,6 +497,9 @@ input[type="password"]{
   background-color: #009900;
   color: #fff;
   border-color: #009900;
+  padding: 10px;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 
@@ -551,3 +554,20 @@ input[type="password"]{
 
 
 
+/*会員ページ*/
+.user-page table{
+  cellpadding: 10;
+  font-size: 25px;
+  padding: 50px 0;
+  text-align: left;
+}
+
+
+.user-page td{
+  padding-left: 50px;
+}
+
+
+.table-second{
+  padding: 30px 0; 
+}
