@@ -1,0 +1,24 @@
+<div id="page" class="user-page">
+  
+  <h1><%= @owner.owner_name %>さんの会員情報</h1>
+  
+  
+  <table>
+    
+    <tr>
+      <th>経営者名</th>
+      <td><%= @owner.owner_name %></td>
+    </tr>
+    
+    <tr>
+      <th>メールアドレス</th>
+      <td><%= @owner.email %></td>
+    </tr>
+    
+    <tr>
+      <th></th>
+      <td><%= link_to "編集する", edit_admin_owner_path, class: "success-btn" %></td>
+    </tr>
+  </table>
+  
+</div>
