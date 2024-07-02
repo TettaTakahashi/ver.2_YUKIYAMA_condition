@@ -38,8 +38,10 @@ Rails.application.routes.draw do
   
   
   
-  scope module: :customer do
-    
+  scope module: :owner do
+    get 'owners/ski_resorts' => 'ski_resorts#index'
+    get 'owners/ski_resort/:id' => 'ski_resorts#show', as: 'owners_ski_resort'
+    resources :ski_resorts, only: [:new, :create, :edit, :update, :destroy]
   end
   
   

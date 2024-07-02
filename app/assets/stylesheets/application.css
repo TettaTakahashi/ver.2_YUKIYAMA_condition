@@ -584,3 +584,27 @@ input[type="password"]{
   text-decoration: none;
   margin-top: 20px;
 }
+
+
+
+
+/*経営者スキー場一覧*/
+.owner-ski-resorts-head{
+  display: flex;
+}
+
+
+.ski-resort-new-btn{
+  box-shadow: 3px 3px 3px gray;
+  height: 40px;
+  width: 150px;
+  background-color: #009900;
+  color: #fff;
+  border-color: #009900;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 65px;
+  margin-left: 400px;
+}
