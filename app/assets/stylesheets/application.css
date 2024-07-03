@@ -588,7 +588,7 @@ input[type="password"]{
 
 
 
-/*経営者スキー場一覧*/
+/*経営者スキー場一覧ページ*/
 .owner-ski-resorts-head{
   display: flex;
 }
@@ -607,4 +607,37 @@ input[type="password"]{
   line-height: 40px;
   margin-top: 65px;
   margin-left: 400px;
+}
+
+
+
+
+/*スキー場新規登録ページ*/
+.ski-resort-new table{
+  font-size: 20px;
+  padding: 50px 0;
+  text-align: left;
+}
+
+
+.ski-resort-new td{
+  padding-left: 80px;
+  padding-bottom: 20px;
+}
+
+
+.ski-resort-new th{
+  padding-bottom: 20px;
+}
+
+
+.ski-resort-new-head{
+  display: flex;
+}
+
+
+.ski-resort-new-head h3{
+  margin-top: 75px;
+  margin-left: 20px;
+  color: red;
 }
