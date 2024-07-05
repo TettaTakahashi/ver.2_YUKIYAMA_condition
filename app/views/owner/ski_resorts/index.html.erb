@@ -9,4 +9,18 @@
   </div>
   
   
+  <div class="ski-resort-index">
+    
+    <% @ski_resorts.each do |ski_resort| %>
+      
+      <div class="ski-resort-item">
+        <%= link_to image_tag(ski_resort.image, size: "340x210"), owners_ski_resort_path(ski_resort) %><br>
+        <span class="ski-resort-index-name"><%= ski_resort.name %> (<%= ski_resort.prefecture.prefecture_name %>)</span><br>
+        <span class="ski-resort-index-updated">最終更新：<%= ski_resort.updated_at.strftime('%Y/%m/%d/%T') %></span>
+      </div>
+      
+    <% end %>
+    
+  </div>
+  
 </div>

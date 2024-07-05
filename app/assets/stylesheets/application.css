@@ -610,6 +610,27 @@ input[type="password"]{
 }
 
 
+.ski-resort-index{
+  display: flex;
+}
+
+
+.ski-resort-item{
+  margin-right: 70px;
+  margin-top: 30px;
+}
+
+
+.ski-resort-index-name{
+  font-size: 20px;
+}
+
+
+.ski-resort-index-updated{
+  color: gray;
+}
+
+
 
 
 /*スキー場新規登録ページ*/
