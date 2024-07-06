@@ -662,3 +662,30 @@ input[type="password"]{
   margin-left: 20px;
   color: red;
 }
+
+
+
+
+/*スキー場詳細ページ*/
+.ski-resort-show-up{
+  display: flex;
+  margin-top: 40px;
+}
+
+
+.flex{
+  display: flex;
+}
+
+
+.danger-btn{
+  box-shadow: 3px 3px 3px gray;
+  height: 35px;
+  width: 80px;
+  background-color:#CC0000;
+  color: #fff;
+  border-color: #CC0000;
+  padding: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}

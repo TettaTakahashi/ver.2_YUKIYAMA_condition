@@ -25,6 +25,26 @@ class Owner::SkiResortsController < ApplicationController
   end
   
   
+  def show
+    @ski_resort = SkiResort.find(params[:id])
+  end
+  
+  
+  def edit
+    
+  end
+  
+  
+  def update
+    
+  end
+  
+  
+  def destroy
+    
+  end
+  
+  
   
   private
   
