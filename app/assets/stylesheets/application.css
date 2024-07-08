@@ -689,3 +689,38 @@ input[type="password"]{
   font-size: 14px;
   text-decoration: none;
 }
+
+
+.ski-resort-show-up-right{
+  margin-left: 40px;
+}
+
+
+.ski-resort-show-up-right h2{
+  font-size: 30px;
+}
+
+
+.ski-resort-show-up-right h4{
+  font-size: 22px;
+}
+
+
+.ski-resort-show-up-right p{
+  margin: 50px 0;
+}
+
+
+.flex{
+  align-items: center;
+}
+
+
+.ski-resort-show-up-right .success-btn{
+  margin: 0 20px;
+}
+
+
+.favorite{
+  font-size: 18px;
+}

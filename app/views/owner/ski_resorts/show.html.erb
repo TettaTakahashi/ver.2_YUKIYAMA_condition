@@ -4,7 +4,7 @@
       
     <%= image_tag @ski_resort.image, size: "480x310" %>
     
-    <div>
+    <div class="ski-resort-show-up-right">
       <div class="flex">
          <h2><%= @ski_resort.name %></h2>
          <h4>（<%= @ski_resort.prefecture.prefecture_name %>）</h4>
@@ -16,6 +16,7 @@
         最終更新：<%= @ski_resort.updated_at.strftime("%Y/%m/%d/%T") %>
         <%= link_to "編集する", edit_ski_resort_path, class: "success-btn" %>
         <%= link_to "削除する", ski_resort_path(@ski_resort), method: :delete, "data-cofilm" => "本当に削除しますか？", class: "danger-btn" %>
+        <h5 class="favorite">️❤️ <%= @favorite_resorts_count %></h5>
       </div>
       
     </div>
