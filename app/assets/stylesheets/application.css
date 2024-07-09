@@ -724,3 +724,15 @@ input[type="password"]{
 .favorite{
   font-size: 18px;
 }
+
+
+.ski-resort-show-under{
+  margin-top: 40px;
+}
+
+
+.ski-resort-show-under table{
+  border-spacing: 70px 20px;
+  font-size: 21px;
+  text-align: left;
+}

@@ -26,6 +26,51 @@
   
   <div class="ski-resort-show-under">
     
+    <table>
+      
+      <tr>
+        <th>営業状況</th>
+        <td>
+          <% if @ski_resort.sales_active %>
+            営業中
+          <% else %>
+            準備中
+          <% end %>
+        </td>
+      </tr>
+      
+      <tr>
+        <th>1日券料金</th>
+        <td>¥<%= @ski_resort.price %></td>
+      </tr>
+      
+      <tr>
+        <th>リフト待ち時間</th>
+        <td><%= @ski_resort.waiting_time %></td>
+      </tr>
+      
+      <tr>
+        <th>天候</th>
+        <td><%= @ski_resort.weather %></td>
+      </tr>
+      
+      <tr>
+        <th>ゲレンデの状況</th>
+        <td>
+          <%if @ski_resort.snow_active %>
+            圧雪
+          <% else %>
+          　非圧雪
+          <% end %>
+        </td>
+      </tr>
+      
+      <tr>
+        <th>周辺道路の状況</th>
+        <td><%= @ski_resort.road_condition %></td>
+      </tr>
+    </table>
+    
   </div>
   
 </div>
