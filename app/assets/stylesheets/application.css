@@ -727,6 +727,7 @@ input[type="password"]{
 
 
 .ski-resort-show-under{
+  display: flex;
   margin-top: 40px;
 }
 
@@ -735,4 +736,9 @@ input[type="password"]{
   border-spacing: 70px 20px;
   font-size: 21px;
   text-align: left;
+}
+
+
+.review{
+  margin-left: 60px;
 }

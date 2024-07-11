@@ -14,8 +14,12 @@
       
       <div>
         最終更新：<%= @ski_resort.updated_at.strftime("%Y/%m/%d/%T") %>
-        <%= link_to "編集する", edit_ski_resort_path, class: "success-btn" %>
-        <%= link_to "削除する", ski_resort_path(@ski_resort), method: :delete, "data-cofilm" => "本当に削除しますか？", class: "danger-btn" %>
+        
+        <% if @ski_resort.owner == current_owner %>
+          <%= link_to "編集する", edit_ski_resort_path, class: "success-btn" %>
+          <%= link_to "削除する", ski_resort_path(@ski_resort), method: :delete, "data-cofilm" => "本当に削除しますか？", class: "danger-btn" %>
+        <% end %>
+          
         <h5 class="favorite">️❤️ <%= @favorite_resorts_count %></h5>
       </div>
       
@@ -70,6 +74,22 @@
         <td><%= @ski_resort.road_condition %></td>
       </tr>
     </table>
+    
+    
+    <div class="review">
+      
+      <h2>Review</h2>
+      
+      <% @reviews.each do |review| %>
+      
+        <div class="comment">
+          <h3><%= review.customer.customer_name %></h3>
+          <p><%= review.comment %></p>
+        </div>
+        <br>
+      
+      <% end %>
+    </div>
     
   </div>
   

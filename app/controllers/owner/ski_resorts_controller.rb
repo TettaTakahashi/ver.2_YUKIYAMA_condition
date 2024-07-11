@@ -29,6 +29,7 @@ class Owner::SkiResortsController < ApplicationController
     @ski_resort = SkiResort.find(params[:id])
     @favorite_resorts_count = 0
     @favorite_resorts_count += @ski_resort.favorite_resorts.size
+    @reviews = @ski_resort.reviews
   end
   
   
