@@ -34,12 +34,18 @@ class Owner::SkiResortsController < ApplicationController
   
   
   def edit
-    
+    @ski_resort = SkiResort.find(params[:id])
   end
   
   
   def update
-    
+    @ski_resort = current_owner.ski_resorts.find(params[:id])
+    if @ski_resort.update(ski_resort_params)
+      redirect_to owners_ski_resort_path(@ski_resort)
+    else
+      flash.now[:alert] = "すべての項目を入力してください"
+      render :edit
+    end
   end
   
   

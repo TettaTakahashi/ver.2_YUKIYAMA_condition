@@ -742,3 +742,11 @@ input[type="password"]{
 .review{
   margin-left: 60px;
 }
+
+
+
+
+/*スキー場編集ページ*/
+.edit-message{
+  color: red;
+}
