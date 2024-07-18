@@ -50,7 +50,9 @@ class Owner::SkiResortsController < ApplicationController
   
   
   def destroy
-    
+    @ski_resort = SkiResort.find(params[:id])
+    @ski_resort.destroy
+    redirect_to owners_ski_resorts_path
   end
   
   
