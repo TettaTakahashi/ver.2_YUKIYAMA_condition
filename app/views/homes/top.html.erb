@@ -10,3 +10,43 @@
   </p>
   
 </div>
+
+
+<div id="page">
+  
+  <h1>新着更新情報</h1>
+  
+  <div class="new_ski_resort_all">
+    
+    <% @ski_resorts.first(6).each do |ski_resort| %>
+      <div class="new_ski_resort">
+        <%= link_to image_tag(ski_resort.image, size:"280x180"), ski_resort_path(ski_resort) %>
+        <% if ski_resort.name.length > 14 %>
+          <h3>
+            <%= ski_resort.name.slice(0, 14) %><br>
+            <%= ski_resort.name.slice(14..) %>
+          </h3>
+          
+          (<%= ski_resort.prefecture.prefecture_name %>)
+          
+          <% else %>
+          
+          <h3><%= ski_resort.name %></h3>
+          
+          (<%= ski_resort.prefecture.prefecture_name %>)
+        <% end %>
+        
+        <div class="ski_resort_update">
+          最終更新：<%= ski_resort.updated_at.strftime('%Y/%m/%d/%T') %>
+        </div>
+        
+      </div>
+    <% end %>
+  </div>
+  
+  
+  <div class="all-link">
+    <%= link_to "すべてのスキー場を見る", ski_resorts_path %>
+  </div>
+  
+</div>
